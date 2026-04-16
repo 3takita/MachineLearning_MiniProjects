@@ -92,6 +92,7 @@ def main():
         prediction, scores = predict_naive_bayes(case, priors, likelihoods, labels)
 
         print(f"\nPatient Case {i}")
+        print("-" * 20) 
         print(f"Symptoms: {case}")
         print(f"Predicted Condition: {prediction}")
         print("Log Scores:")
